@@ -209,19 +209,32 @@ section{
 /* About Section */
 .about {
     display: grid;
-   justify-content: center; /* Two columns layout */
+    justify-content: center;
     gap: 1.5rem;
-   align-items: center;
-   grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-template-columns: 1fr 1fr; /* Two columns layout */
 }
-#about{
+
+#about {
     padding: 5rem;
 }
+
 .about-img img {
-width: 35vw;    
+    width: 100%; /* Ensure the image takes up the full container width */
+    max-width: 450px; /* Restrict max width for the image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image scales correctly */
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem; /* Adjust as needed for spacing */
 }
 
 .about-text h2 {
+    text-align: left;
     padding-top: 25px;
     color: #E6A9A9;
     font-size: 60px;
