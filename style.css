@@ -217,7 +217,12 @@ section{
 #about {
     padding: 5rem;
 }
-
+.about-img {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    width: 100%; /* Ensure the container is full width */
+}
 .about-img img {
     width: 100%; /* Ensure the image takes up the full container width */
     max-width: 450px; /* Restrict max width for the image */
