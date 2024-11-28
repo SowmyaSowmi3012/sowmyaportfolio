@@ -210,14 +210,16 @@ section{
 /* About Section */
 .about {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns layout */
+   justify-content: center; /* Two columns layout */
     gap: 1.5rem;
-    padding: 50px 10%;
-    margin-top: 20px;
+   align-items: center;
+   grid-template-columns: 1fr 1fr;
 }
-
+#about{
+    padding: 5rem;
+}
 .about-img img {
-  width: 35vw;   
+width: 35vw;    
 }
 
 .about-text h2 {
