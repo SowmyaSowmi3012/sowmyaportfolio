@@ -15,6 +15,7 @@ body {
     
 }
 section{
+     height: calc(100vh - 50px);
     padding: 10rem 9% 2rem;
 }
 /* Header */
