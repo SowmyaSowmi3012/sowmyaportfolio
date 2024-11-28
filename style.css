@@ -786,6 +786,7 @@ position: relative;
   
   .contact-form  {
     width: 55%;
+       max-width: 600px;
     padding: 20px;
     background-color: #F4F2FA;
     border-radius: 12px;
