@@ -885,6 +885,22 @@ font-size:20px;
     .about {
         grid-template-columns: 1fr; /* Stack content on smaller screens */
     }
+        .about-img img {
+        width: 80%; /* Adjust image width for smaller screens */
+        margin: 0 auto; /* Center the image */
+    }
+
+    .about-text h2 {
+        font-size: 45px; /* Adjust heading size for smaller screens */
+    }
+
+    .about-text h4 {
+        font-size: 24px; /* Adjust subheading size for smaller screens */
+    }
+
+    .about-text p {
+        font-size: 18px; /* Adjust paragraph size for smaller screens */
+    }
 
     .services-list {
         grid-template-columns: 1fr; /* Stack services */
