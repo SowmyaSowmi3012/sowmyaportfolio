@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#" class="logo"> Portfolio</a>
+      <nav class="navbar">
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+        <div class="menu-links">
+          <a href="#home" style="--i: 1" class="active" id="home-link">Home</a>
+          <a href="#about" style="--i: 2">About</a>
+          <a href="#services" style="--i: 3">Services</a>
+          <a href="#skills-section" style="--i: 4">Skills</a>
+          <a href="#portfolio" style="--i: 5">Projects</a>
+          <a href="#contact" style="--i: 6">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="home">
+      <div class="home-content">
+        <h3 class="animate-on-scroll" data-animation="slideTop">
+          Hello , Its Me
+        </h3>
+        <h1 class="animate-on-scroll" data-animation="slideTop">Sowmya .N</h1>
+        <h3 class="animate-on-scroll" data-animation="slideTop">
+          And I'm a <span class="text"></span>
+        </h3>
+        <p class="animate-on-scroll" data-animation="slideBottom">
+          I make websites that look good and work even better (most of the
+          time).<br />
+          Got a problem? I’ll solve it with some code and a lot of coffee!<br />
+          Let’s turn your ideas into something epic—no bugs, just magic!<br />
+        </p>
+        <div class="home-sci">
+          <a
+            href="https://www.facebook.com/profile.php?id=100019000170952"
+            style="--i: 7"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a href="https://wa.me/9900929108" style="--i: 8"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+          <a href="https://www.instagram.com/sowmya7189/?__pwa=1" style="--i: 9"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+        </div>
+        <a
+          href="#"
+          class="read"
+          onclick="downloadFile('/Resume Sowmya.pdf', 'Sowmya.pdf')"
+          >Download CV</a
+        >
+      </div>
+      <div class="home-img">
+        <img src="./1.png" />
+      </div>
+      <span class="home-imgHover"></span>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="4.png" alt="About Image" />
+      </div>
+      <div class="about-text">
+        <h2 class="animate-on-scroll" data-animation="slideTop">
+          About <span> Me</span>
+        </h2>
+        <h4 class="animate-on-scroll" data-animation="slideTop">
+          Software Developer
+        </h4>
+        <p class="animate-on-scroll" data-animation="slideBottom">
+          I’m a frontend developer specializing in React, turning ideas into
+          dynamic, polished web applications. With expertise in HTML, CSS,
+          Tailwind CSS, and JavaScript, I create responsive designs that
+          captivate and perform. My toolkit includes Redux and React Query for
+          smooth state management, while my backend knowledge of Node, Express,
+          and MongoDB adds versatility. I also code in Java and Python, allowing
+          me to tackle a range of challenges with ease. I’m passionate about
+          delivering apps that balance stunning visuals with seamless
+          functionality—projects that not only work well but leave a lasting
+          impression on users.
+        </p>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <h1 class="sub-title animate-on-scroll" data-animation="slideTop">
+          MY <span>Services</span>
+        </h1>
+        <div class="services-list">
+          <div class="animate-on-scroll" data-animation="slideLeft">
+            <i class="bx bx-crop" style="color: #a2e8eb"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              I’m a UI/UX designer—part artist, part mind-reader—crafting
+              layouts that look amazing and make users say, “Wow, that’s
+              smooth!”
+            </p>
+            <a href="#portfolio" class="read"> Learn More</a>
+          </div>
+          <div class="animate-on-scroll" data-animation="slideLeft">
+            <i class="bx bx-code" style="color: #a2e8eb"></i>
+            <h2>Web Developer</h2>
+            <p>
+              I’m a web developer, blending creativity with technology to craft
+              seamless and responsive websites that deliver exceptional user
+              experiences.
+            </p>
+            <a href="#portfolio" class="read"> Learn More</a>
+          </div>
+          <div class="animate-on-scroll" data-animation="slideLeft">
+            <i class="bx bx-code-alt" style="color: #a2e8eb"></i>
+            <h2>Frontend Dev</h2>
+            <p>
+              Turning pixel-perfect designs into interactive
+              masterpieces—crafting seamless, intuitive web experiences that
+              captivate users perform on any device
+            </p>
+            <a href="#portfolio" class="read"> Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <h1 class="sub-title animate-on-scroll" data-animation="slideTop">
+      My <span> Skills</span>
+    </h1>
+
+    <section class="skills-section" id="skills-section">
+      <div class="container1" id="Skills">
+        <h1 class="headings1">Technical Skills</h1>
+        <div class="Technical-bars">
+          <!-- Each bar for HTML, CSS, JS, Python, React -->
+          <div class="bar">
+            <div class="info">
+              <i class="bx bxl-html5" style="color: #c94d2e"></i>
+              <span>HTML</span>
+            </div>
+            <div class="progress-line html">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <i class="bx bxl-css3" style="color: #147bbc"></i>
+              <span>CSS</span>
+            </div>
+            <div class="progress-line css">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <i class="bx bxl-javascript" style="color: #b0bc1e"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="progress-line javascript">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <i class="bx bxl-python" style="color: #c32ec9"></i>
+              <span>Python</span>
+            </div>
+            <div class="progress-line python">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <i class="bx bxl-react" style="color: #69bcbc"></i>
+              <span>React</span>
+            </div>
+            <div class="progress-line react">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container1">
+        <h1 class="headings1">Professional Skills</h1>
+        <div class="radial-bars">
+          <!-- Each radial bar for skills like Creativity, Communication, Teamwork, Problem Solving -->
+          <div class="radial-bar" data-index="1">
+            <svg x="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">90%</div>
+            <div class="text">Creativity</div>
+          </div>
+          <div class="radial-bar">
+            <svg x="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">80%</div>
+            <div class="text">Communication</div>
+          </div>
+          <div class="radial-bar">
+            <svg x="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">85%</div>
+            <div class="text">Teamwork</div>
+          </div>
+          <div class="radial-bar">
+            <svg x="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">70%</div>
+            <div class="text">Problem Solving</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="#portfolio" id="portfolio">
+      <h1 class="sub-title animate-on-scroll" data-animation="slideTop">
+        MY <span>Projects</span>
+      </h1>
+      <div class="container">
+        <!-- Project 1 -->
+        <div class="card">
+          <img src="1.png" alt="Food Inventory Hub" />
+          <div class="card-content">
+            <p class="category">Web Development</p>
+            <h3>Food Inventory Hub (Crusty Cafe)</h3>
+            <p>
+              A web application developed with the MERN technology, allowing
+              users to easily order food and manage orders efficiently.
+            </p>
+            <a href="#">See Project →</a>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="card">
+          <img src="3.png" alt="Real-Time Chat Application" />
+          <div class="card-content">
+            <p class="category">Web Development</p>
+            <h3>Real-Time Chat Application (Connectly)</h3>
+            <p>
+              A real-time messaging application built with MERN technology,
+              enabling seamless communication with features like live chat,
+              notifications, and user management.
+            </p>
+            <a href="#">See Project →</a>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="card">
+          <img src="4.png" alt="E-Learning Platform" />
+          <div class="card-content">
+            <p class="category">Web Development</p>
+            <h3>E-Learning Platform (Udemy Clone)</h3>
+            <p>
+              Frontend design created using modern web technologies, providing
+              an intuitive and responsive user interface for online learning.
+            </p>
+            <a href="#">See Project →</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="5.png" alt="Food Inventory Hub" />
+          <div class="card-content">
+            <p class="category">Web Development</p>
+            <h3>Food Inventory Hub (Crusty Cafe)</h3>
+            <p>
+              A web application developed with the MERN technology, allowing
+              users to easily order food and manage orders efficiently.
+            </p>
+            <a href="#">See Project →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section" id="contact">
+      <div class="contact-info">
+        <div class="info-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>Address: Bangalore, Karnataka, India</p>
+        </div>
+        <div class="info-item">
+          <i class="fa-solid fa-phone"></i>
+          <p>Phone: +91 9900929108</p>
+        </div>
+        <div class="info-item">
+          <i class="fa-solid fa-envelope"></i>
+          <p>Email: sowmisowmya402@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="contact-form" method="POST">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+          <div class="form-field">
+            <label for="fullName">Your Full Name *</label>
+            <input type="text" id="fullName" name="fullName" required />
+          </div>
+          <div class="form-field">
+            <label for="email">Your Email Address *</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-field">
+            <label for="subject">Your Subject *</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+          <div class="form-field">
+            <label for="message">Your Message *</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+        <p>DEVELOPED BY SOWMYA</p>
+      </footer>
+      
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector(".menu-links");
+        menu.classList.toggle("show"); // Toggle the "show" class
+      }
+    </script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("Sowmya"); // Initialize EmailJS with your User ID
+      })();
+    </script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
