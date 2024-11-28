@@ -864,7 +864,6 @@ font-size:20px;
     }
     .home-img img {
         width: 90vw;
-        margin-top: 2rem;
     }
     .about {
         grid-template-columns: 1fr; /* Stack content */
