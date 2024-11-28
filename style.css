@@ -15,10 +15,8 @@ body {
     
 }
 section{
-      display: flex;
-    flex-direction: column;
-    flex-grow: 1; /* This will make the section take up available space */
     padding: 10rem 9% 2rem;
+     height: auto;
 }
 /* Header */
 .header {
